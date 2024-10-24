@@ -92,7 +92,7 @@ console.log(CemberinAlani(15));
 
 /*  (oto test yok) sayilar dizisi içinde kaç adet sayı olduğunu konsola yazdırın */
 
-let ucetambolunenler,
+let 
   enkucuk,
   enbuyuk,
   ucebolunenlerintoplami,
@@ -105,7 +105,8 @@ let ucetambolunenler,
 
 
 /* kodlar buraya */
-enbuyuk = sayilar[0]; 
+enbuyuk = sayilar[0];
+enkucuk= sayilar[0] ;
 
 // Dizideki sayıları döngüyle kontrol et
 for (let i = 1; i < sayilar.length; i++) {
@@ -119,7 +120,12 @@ for (let i = 1; i < sayilar.length; i++) {
   console.log("enbuyuk :"+enbuyuk+" enbuyuk :"+enkucuk)
 // 3b çözümü:
 
-/* kodlar buraya */
+const ucetambolunenler =[];
+sayilar.forEach(function(sayi) {
+  if (sayi % 3 === 0) { 
+    ucetambolunenler.push(sayi);
+  }
+});
 
 // 3c çözümü:
 
