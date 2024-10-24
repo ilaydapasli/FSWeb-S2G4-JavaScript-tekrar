@@ -161,7 +161,7 @@ sayilar.forEach(function(sayi) {
 
 for (let sayi in sayiTekrar) {
   if (sayiTekrar[sayi] > 1) {
-    tekraredensayilar.push(`${sayi} sayısı ${sayiTekrar[sayi]} kere tekrar edilmiştir.`);
+    tekraredensayilar.push(`${sayi} sayısı ${sayiTekrar[sayi]} kere tekrar edilmiştir`);
   }
 }
 
