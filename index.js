@@ -69,6 +69,7 @@ function CemberinAlani(r, pi) {
 }
 
 console.log(2);
+console.log(CemberinAlani(15));
 
 /* (Oto test yok) Yukarıdaki CemberinAlani fonksiyonunu yarıçap = 15 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
 
@@ -101,8 +102,21 @@ let ucetambolunenler,
 
 // 3a çözümü
 
-/* kodlar buraya */
 
+
+/* kodlar buraya */
+enbuyuk = sayilar[0]; 
+
+// Dizideki sayıları döngüyle kontrol et
+for (let i = 1; i < sayilar.length; i++) {
+    if (sayilar[i] > enbuyuk) {
+        enbuyuk = sayilar[i];  // Eğer daha büyük bir sayı bulursak en büyük değişkenini güncelle
+    }
+    if (sayilar[i] < enkucuk) {
+        enkucuk = sayilar[i];  // Eğer daha küçük bir sayı bulursak en küçük değişkenini güncelle
+    } 
+  }
+  console.log("enbuyuk :"+enbuyuk+" enbuyuk :"+enkucuk)
 // 3b çözümü:
 
 /* kodlar buraya */
