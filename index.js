@@ -94,11 +94,7 @@ console.log(CemberinAlani(15));
 
 let 
   enkucuk,
-  enbuyuk,
-  
-  besyuzdenkucuksayilar,
-  siralisayilar,
-  tekraredensayilar;
+  enbuyuk;
 
 // 3a çözümü
 
@@ -134,15 +130,41 @@ for(let i=0;i<ucetambolunenler.length;i++){
 
 }
 
-// 3d çözümü
+
+let besyuzdenkucuksayilar = sayilar.filter(function(sayi){
+  return sayi<500;
+})
+
 
 /* kodlar buraya */
 
-// 3e çözümü
+let siralisayilar = besyuzdenkucuksayilar.sort(function(a, b) {
+  return a - b;  
+});
 
-/* kodlar buraya */
+console.log("Sıralı sayılar:", siralisayilar);
 
-// 3f çözümü
+
+
+let sayiTekrar = {};
+let tekraredensayilar = [];
+
+
+sayilar.forEach(function(sayi) {
+  if (sayiTekrar[sayi]) {
+    sayiTekrar[sayi]++;
+  } else {
+    sayiTekrar[sayi] = 1;
+  }
+});
+
+
+for (let sayi in sayiTekrar) {
+  if (sayiTekrar[sayi] > 1) {
+    tekraredensayilar.push(`${sayi} sayısı ${sayiTekrar[sayi]} kere tekrar edilmiştir.`);
+  }
+}
+
 
 /* kodlar buraya */
 
