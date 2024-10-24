@@ -95,7 +95,7 @@ console.log(CemberinAlani(15));
 let 
   enkucuk,
   enbuyuk,
-  ucebolunenlerintoplami,
+  
   besyuzdenkucuksayilar,
   siralisayilar,
   tekraredensayilar;
@@ -128,8 +128,11 @@ sayilar.forEach(function(sayi) {
 });
 
 // 3c çözümü:
+let ucebolunenlerintoplami=0;
+for(let i=0;i<ucetambolunenler.length;i++){
+  ucebolunenlerintoplami+=ucetambolunenler[i];
 
-/* kodlar buraya */
+}
 
 // 3d çözümü
 
